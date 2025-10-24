@@ -462,15 +462,16 @@ footer .links a:hover {
   transform: translateX(-50%) translateY(-36px);
   padding: 10px 92px;
   border-radius: 100px;
-  background: var(--accent-green);
-  color: #fff;
+  background: #eaf6ea;
+  color: var(--accent-green);
+  border: 1px solid #d6eed8;
   font-weight: 700;
   font-size: 1.05rem;
   text-align: center;
   opacity: 0;
   pointer-events: none;
   z-index: 9999;
-  box-shadow: 0 4px 18px rgba(60, 180, 120, .13);
+  box-shadow: 0 4px 18px rgba(112, 187, 100, .12);
   transition: opacity .32s, transform .33s;
   letter-spacing: .02em;
 }
