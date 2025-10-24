@@ -1,3 +1,4 @@
+/* index.css */
 :root {
   --main-black: #232323;
   --gray-block: #f6f6f6;
@@ -11,9 +12,7 @@
 
   /* unified buttons */
   --btn-h: 48px;
-  /* единая высота для всех кнопок */
   --btn-pad-x: 28px;
-  /* горизонтальные отступы */
 }
 
 /* Base */
@@ -97,10 +96,20 @@ h2 {
   color: var(--accent-green);
 }
 
+/* Base email style (overridden below for header only) */
 .email {
   color: var(--main-black);
   font-size: 16px;
   font-weight: 600;
+}
+
+/* HEADER: адаптивный размер email только в шапке */
+.header .left .email {
+  font-size: clamp(12px, 3.8vw, 18px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 
 /* ===== Buttons: unified height for ALL ===== */
@@ -246,6 +255,8 @@ section.about {
   font-weight: 800;
   color: #fff;
   display: inline;
+  white-space: nowrap;
+  /* держим фразу на одной строке */
 }
 
 /* Services */
@@ -425,7 +436,6 @@ footer {
   border: none;
   text-align: center;
   padding: 32px 0 18px;
-  font-size: 15px;
   color: #aaaaaa;
   margin: 0 auto;
   width: 100%;
@@ -433,6 +443,12 @@ footer {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+}
+
+footer p {
+  font-size: clamp(12px, 3.4vw, 15px);
+  margin: 0;
+  text-wrap: balance;
 }
 
 footer .links {
@@ -446,7 +462,7 @@ footer .links a {
   color: #bbbbbb;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: clamp(12px, 3.2vw, 15px);
   padding: 0 6px;
 }
 
@@ -457,10 +473,10 @@ footer .links a:hover {
 /* Toast */
 .toast {
   position: fixed;
-  top: 30px;
+  top: 29px;
   left: 50%;
   transform: translateX(-50%) translateY(-36px);
-  padding: 10px 92px;
+  padding: 10px 50px;
   border-radius: 100px;
   background: #eaf6ea;
   color: var(--accent-green);
@@ -562,10 +578,9 @@ footer .links a:hover {
   }
 
   .header .left .email {
+    /* остаётся clamp из общего правила; ничего не переопределяем фиксированным числом */
     text-align: center;
     white-space: nowrap;
-    font-size: 18px;
-    font-weight: 600;
   }
 
   .header .left .actions {
@@ -578,8 +593,6 @@ footer .links a:hover {
   .header .btn-dark {
     padding: 0 var(--btn-pad-x);
   }
-
-  /* высота уже фиксированная */
 
   .hero {
     padding: 32px 0 24px;
@@ -627,7 +640,7 @@ footer .links a:hover {
     font-size: 1rem;
   }
 
-  /* во всех секциях кнопки могут тянуться на ширину контейнера, но высота одинаковая */
+  /* Кнопки тянутся по ширине, высота единая */
   .btn-dark,
   .btn-light {
     width: 100%;
