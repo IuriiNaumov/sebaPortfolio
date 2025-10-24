@@ -1,15 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Core -->
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  />
-  <title>Portfolio — Dr. Misael Sebastián Gradilla Hernández</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Dr. Misael Sebastián Gradilla Hernández</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://sebastiangradilla.phd/" />
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Environmental scientist and policy advisor focused on water quality, circular bioeconomy and biotechnological solutions. 65+ publications. Jalisco, Mexico." />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Dr. Misael Sebastián Gradilla Hernández" />
+  <meta name="theme-color" content="#70bb64" />
+  <meta name="application-name" content="Gradilla Portfolio" />
+  <meta name="apple-mobile-web-app-title" content="Gradilla Portfolio" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- Favicons (иконка ростка — fav.png) -->
+  <link rel="icon" href="/fav.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/fav.png" />
+
+  <!-- (опционально, если есть webmanifest) -->
+  <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dr. Misael S. Gradilla Hernández" />
+  <meta property="og:title" content="Advancing Sustainability — Science, Policy & Innovation" />
+  <meta property="og:description"
+    content="Environmental scientist, professor and policy advisor. Water quality, circular bioeconomy, biotechnological solutions." />
+  <meta property="og:url" content="https://sebastiangradilla.phd/" />
+  <meta property="og:image" content="https://sebastiangradilla.phd/cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dr. Gradilla Hernández — sustainability, policy and innovation" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Advancing Sustainability — Science, Policy & Innovation" />
+  <meta name="twitter:description" content="Environmental scientist, professor and policy advisor." />
+  <meta name="twitter:image" content="https://sebastiangradilla.phd/cover.jpg" />
+
+  <!-- JSON-LD (Person + WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Person",
+        "name":"Dr. Misael Sebastián Gradilla Hernández",
+        "jobTitle":"Environmental Scientist, Professor, Policy Advisor",
+        "url":"https://sebastiangradilla.phd/",
+        "image":"https://sebastiangradilla.phd/profile.jpg",
+        "email":"mailto:circulareconomy@sebastiangradilla.phd",
+        "address":{
+          "@type":"PostalAddress",
+          "addressRegion":"Jalisco",
+          "addressCountry":"MX"
+        },
+        "sameAs":[
+          "https://scholar.google.es/citations?user=jywqPwMAAAAJ&hl=es&oi=ao",
+          "https://www.researchgate.net/profile/Misael-Gradilla-Hernandez/research",
+          "https://orcid.org/0000-0002-8236-4400"
+        ],
+        "knowsAbout":[
+          "Water quality","Circular economy","Biotechnological processes","Sustainability policy"
+        ]
+      },
+      {
+        "@type":"WebSite",
+        "name":"Dr. Misael S. Gradilla Hernández — Portfolio",
+        "url":"https://sebastiangradilla.phd/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" />
   <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
   <div id="toast" class="toast">Copied!</div>
 
@@ -23,8 +100,10 @@
       </div>
     </div>
     <div class="right">
-      <a href="https://scholar.google.es/citations?user=jywqPwMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://www.researchgate.net/profile/Misael-Gradilla-Hernandez/research" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="https://scholar.google.es/citations?user=jywqPwMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">Google
+        Scholar</a>
+      <a href="https://www.researchgate.net/profile/Misael-Gradilla-Hernandez/research" target="_blank"
+        rel="noopener">ResearchGate</a>
       <a href="https://orcid.org/0000-0002-8236-4400" target="_blank" rel="noopener">ORCID</a>
     </div>
   </header>
@@ -35,7 +114,7 @@
     <img src="profile.jpg" alt="Profile" class="avatar" />
     <h1>
       Advancing Sustainability<br />
-      <span>Science, Policy, and Innovation for a Greener Future</span>
+      <span>Science, Policy, and Innovation for a <span class="green-text">Greener Future</span></span>
     </h1>
     <p>
       Environmental scientist, professor, and policy advisor specializing in water quality, circular economy, and
@@ -65,32 +144,24 @@
     <div class="service-list">
       <div class="service">
         <h3>Water & Environmental Quality</h3>
-        <p>
-          Monitoring, assessment, and restoration of rivers and lakes, with a focus on innovative solutions
-          for pollution control.
-        </p>
+        <p>Monitoring, assessment, and restoration of rivers and lakes, with a focus on innovative solutions for
+          pollution control.</p>
       </div>
       <div class="service">
         <h3>Circular Bioeconomy</h3>
-        <p>
-          Development of circular economy strategies for agro-industrial waste, including tequila vinasses and
-          livestock residues.
-        </p>
+        <p>Development of circular economy strategies for agro-industrial waste, including tequila vinasses and
+          livestock residues.</p>
       </div>
       <div class="service">
         <h3>Biotechnological Innovation</h3>
-        <p>
-          Application of microalgae, anaerobic digestion, and advanced bioprocesses for sustainable waste and
-          water treatment.
-        </p>
+        <p>Application of microalgae, anaerobic digestion, and advanced bioprocesses for sustainable waste and water
+          treatment.</p>
       </div>
       <div class="service service-policy">
         <div>
           <h3>Science-Based Policy & Consulting</h3>
-          <p>
-            Design and implementation of evidence-based public policies for environmental protection and
-            sustainable development.
-          </p>
+          <p>Design and implementation of evidence-based public policies for environmental protection and sustainable
+            development.</p>
         </div>
       </div>
     </div>
@@ -114,15 +185,16 @@
         <h3 class="portfolio-title">Recent Publications</h3>
         <p>
           Author and co-author of over 65 peer-reviewed articles and book chapters.<br />
-          <a href="https://scholar.google.es/citations?user=jywqPwMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">See full list on Google Scholar →</a>
+          <a href="https://scholar.google.es/citations?user=jywqPwMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">See
+            full list on Google Scholar →</a>
         </p>
         <ul>
-          <li>“Yeast-filamentous fungi co-culture: A circular bioeconomy approach for distillation stillage
-            treatment…” (Sustainable Chemistry & Pharmacy, 2025)</li>
-          <li>“Integrating sensor data and machine learning to advance the science and management of river
-            carbon emissions…” (Critical Reviews in Environmental Science and Technology, 2025)</li>
-          <li>“Consequential life cycle assessment of pretreatment strategies for a microalgae-based
-            wastewater treatment…” (Algal Research, 2025)</li>
+          <li>“Yeast-filamentous fungi co-culture: A circular bioeconomy approach for distillation stillage treatment…”
+            (Sustainable Chemistry & Pharmacy, 2025)</li>
+          <li>“Integrating sensor data and machine learning to advance the science and management of river carbon
+            emissions…” (Critical Reviews in Environmental Science and Technology, 2025)</li>
+          <li>“Consequential life cycle assessment of pretreatment strategies for a microalgae-based wastewater
+            treatment…” (Algal Research, 2025)</li>
         </ul>
       </div>
       <div class="portfolio-card">
@@ -137,7 +209,8 @@
         <h3 class="portfolio-title">Public Policy & Consulting</h3>
         <ul>
           <li>Advisor for environmental policy development for the State of Jalisco</li>
-          <li>Co-author of major environmental programs and legislation (e.g., “Jalisco Reduce”, water quality standards)</li>
+          <li>Co-author of major environmental programs and legislation (e.g., “Jalisco Reduce”, water quality
+            standards)</li>
           <li>Consultant for international partnerships on circular economy, bioenergy, and water management</li>
         </ul>
       </div>
@@ -145,7 +218,8 @@
         <h3 class="portfolio-title">Science Communication & Outreach</h3>
         <ul>
           <li>Speaker at United Nations Climate Change Conferences (COP27–COP29)</li>
-          <li>Invited expert on TV, radio, podcasts, and public forums about water, sustainability, and the environment</li>
+          <li>Invited expert on TV, radio, podcasts, and public forums about water, sustainability, and the environment
+          </li>
           <li>Organizer of workshops and educational events for scientists, students, and the public</li>
         </ul>
       </div>
@@ -160,8 +234,8 @@
       Let’s work together to advance sustainability and make a difference!
     </p>
     <div class="buttons">
-      <button class="btn-dark" onclick="window.location='mailto:circulareconomy@sebastiangradilla.phd'">Email Me</button>
-      <!-- фикс неверной разметки: вместо button c href — ссылка -->
+      <button class="btn-dark" onclick="window.location='mailto:circulareconomy@sebastiangradilla.phd'">Email
+        Me</button>
       <a class="btn-light" href="https://wa.me/523315702907" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </section>
@@ -169,8 +243,10 @@
   <footer>
     <p>2025 Dr. Misael Sebastián Gradilla Hernández.</p>
     <div class="links">
-      <a href="https://scholar.google.es/citations?user=jywqPwMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://www.researchgate.net/profile/Misael-Gradilla-Hernandez/research" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="https://scholar.google.es/citations?user=jywqPwMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">Google
+        Scholar</a>
+      <a href="https://www.researchgate.net/profile/Misael-Gradilla-Hernandez/research" target="_blank"
+        rel="noopener">ResearchGate</a>
       <a href="https://orcid.org/0000-0002-8236-4400" target="_blank" rel="noopener">ORCID</a>
     </div>
   </footer>
@@ -180,14 +256,12 @@
       navigator.clipboard.writeText('circulareconomy@sebastiangradilla.phd');
       showToast();
     }
-
     function showToast() {
       const toast = document.getElementById('toast');
       toast.classList.add('show');
-      setTimeout(() => {
-        toast.classList.remove('show');
-      }, 1800);
+      setTimeout(() => toast.classList.remove('show'), 1800);
     }
   </script>
 </body>
+
 </html>
