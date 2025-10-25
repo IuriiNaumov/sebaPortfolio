@@ -177,10 +177,10 @@ section {
 
 .hero-arrow {
   position: absolute;
-  top: 120px;
+  top: 340px;
   right: -220px;
   width: 500px;
-  height: 1200px;
+  height: 640px;
   pointer-events: none;
   z-index: 1;
 }
@@ -196,6 +196,7 @@ section {
 
 .green-text {
   color: var(--accent-green) !important;
+  font-size: 4rem;
 }
 
 .hero h1 {
@@ -322,11 +323,11 @@ section.about {
   min-width: 0;
 }
 
-.service-human {
+.service-cactus {
   width: 480px;
   height: auto;
   margin-left: 356px;
-  margin-top: -350px;
+  margin-top: -400px;
   align-self: flex-start;
   object-fit: contain;
   border-radius: 16px;
@@ -402,7 +403,32 @@ section.about {
 .contact {
   text-align: center;
   max-width: 750px;
+  position: relative;
   padding: 0;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.contact-deco {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  width: clamp(140px, 18vw, 260px);
+  height: auto;
+  opacity: .9;
+}
+
+.contact-deco--tl {
+  top: -148px;
+  left: -18px;
+  transform: rotate(-6deg);
+}
+
+.contact-deco--br {
+  bottom: -28px;
+  right: -84px;
+  transform: rotate(-40deg);
 }
 
 .contact h2 {
@@ -539,6 +565,24 @@ footer .links a:hover {
     gap: 150px;
   }
 
+  .contact-deco--tl {
+    top: -58px;
+    left: 20px;
+    transform: rotate(-6deg);
+  }
+
+  .contact-deco--br {
+    top: 58px;
+    right: -4px;
+    transform: rotate(-40deg);
+  }
+
+  .green-text {
+    font-size: clamp(1.7rem, 7vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.18;
+  }
+
   header,
   section,
   footer {
@@ -659,7 +703,7 @@ footer .links a:hover {
   }
 
   .hero-arrow,
-  .service-human {
+  .service-cactus {
     display: none !important;
   }
 }
